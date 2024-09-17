@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2b4e99;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Mueve el icono al lado izquierdo */
+}
+
+nav {
+    display: none; /* Oculto por defecto */
+    background-color: #333;
+    position: absolute;
+    width: 200px;
+    top: 50px;
+    left: 0; /* Mueve el menú al lado izquierdo */
+    text-align: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    border-bottom: 1px solid #555;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para cuando el menú está abierto */
+#menu.open {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
